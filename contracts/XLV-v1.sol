@@ -21,7 +21,7 @@ contract Lovetillion is ERC20, ERC20Burnable, Ownable, ERC20Permit {
     }
 
     // Ensures the same precision as Bitcoin Satoshis is utilized
-    function decimals() public view virtual override returns (uint8) {
+    function decimals() public view virtual override returns ( uint8 ) {
         return 8;
     }
 
