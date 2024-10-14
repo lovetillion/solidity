@@ -17,7 +17,7 @@ contract Lovetillion is ERC20, ERC20Burnable, Ownable, ERC20Permit {
         Ownable(initialOwner)
         ERC20Permit( "Lovetillion" )
     {
-        _mint(msg.sender, 50 * 10 ** decimals());
+        _mint( msg.sender, 50 * 10 ** decimals() );
     }
 
     // Ensures the same precision as Bitcoin Satoshis is utilized
