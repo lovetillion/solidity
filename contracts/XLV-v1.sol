@@ -13,9 +13,9 @@ contract Lovetillion is ERC20, ERC20Burnable, Ownable, ERC20Permit {
     using Math for uint256;
 
     constructor(address initialOwner)
-        ERC20("Lovetillion", "XLV")
+        ERC20( "Lovetillion", "XLV" )
         Ownable(initialOwner)
-        ERC20Permit("Lovetillion")
+        ERC20Permit( "Lovetillion" )
     {
         _mint(msg.sender, 50 * 10 ** decimals());
     }
